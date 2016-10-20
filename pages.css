@@ -1,0 +1,310 @@
+/* Reset */
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin : 0;
+	border : 0;
+	padding : 0;
+	line-height : 1;
+	font : inherit;
+	vertical-align : baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display : block;
+}
+ol, ul {
+	list-style : none;
+}
+blockquote, q {
+	quotes : none;
+}
+blockquote : before, blockquote : after,
+q : before, q : after {
+	content : "";
+	content : none;
+}
+table {
+	border-collapse : collapse;
+	border-spacing : 0;
+}
+/*Reset finished*/
+
+
+html {
+	background-image : url('pictures/background.jpg');
+	background-attachment : fixed;
+	background-size : 100%;
+	background-color : white;
+}
+
+body {
+	font-size : 18px;
+	font-family : serif;
+	width : 42em;
+	height : 100%;
+	margin : 0 auto 0 auto;
+	line-height : 1.35;
+	color : rgb( 40, 40, 40 );
+}
+
+a {
+	text-decoration : none;
+	border-bottom : 1px dotted rgb( 40, 40, 40 );
+	color : rgb( 40, 40, 40 );
+}
+
+	a:hover, a.current {
+		color : rgb( 40, 40, 160 );
+	}
+
+em {
+	font-style : italic;
+}
+
+.figure {
+	float : left;
+	min-height : 11em;
+	margin-bottom : 2em;
+}
+
+	.figure img, .figure video {
+		max-width : 36em;
+		margin : 0;
+		padding : 1em;
+	}
+
+		.caption {
+			font-size : .9em;
+			margin : 0;
+			text-indent : 0;
+			text-align : center;
+		}
+
+.figure + h1, .figure + h2, .figure + h3, .figure + p, .figure + ul, .figure + ol, .figure hr {
+	clear : both;
+}
+
+form {
+	text-align : center;
+}
+
+	form input {
+		font-size : 1em;
+		font-family : serif;
+		padding : .25em;
+		border : 1px dotted rgb( 40, 40, 40 );
+		border-top : 0px;
+		background-color : white;
+	}
+	
+		form input:hover, form input:focus {
+			color : rgb( 40, 40, 160 );
+		}
+
+	form button {
+		font-size : 1em;
+		font-family : serif;
+		border : none;
+		border-bottom : 1px dotted rgb( 40, 40, 40 );
+		background-color : white;
+		cursor : pointer;
+	}
+	
+		form button:hover {
+			color : rgb( 40, 40, 160 );
+		}
+
+hr {
+    display : block;
+    height : 1px;
+    border : 0;
+    border-top : 1px solid rgb( 240, 240, 240 );
+    margin : 2em 0 2em 0;
+    padding : 0; 
+	clear : both;
+}
+
+pre {
+	margin : 2em;
+	font-family : sans-serif;
+}
+
+header {
+	margin : 2em auto 0 auto;
+}
+
+	header img {
+		float : left;
+		width : 14em;
+	}
+
+	nav #return-to-top {
+		position : fixed;
+		font-size : 3em;
+		bottom : .75em;
+		right : .75em;
+	}
+	
+	nav ul {
+		float : right;
+		width : 27em;
+	}
+
+		nav ul li {
+			float : left;
+			width : 33%;
+			padding : 0;
+			margin : 0 0 .38em 0;
+			list-style : none;
+			text-align : right;
+		}
+	
+			nav ul li a {
+				display : block;
+			}
+		
+	nav form {
+		float : right;
+		font-size : 1em;
+		width : 20em;
+		margin : 0 0 0 0;
+		text-align : right;
+	}
+			
+		nav form input {
+			font-size : 1em;
+			width : 50%;
+			padding-top : 0;
+			padding-right : 0;
+			border-right : 0px;
+			text-align : right;
+		}
+
+		nav form button {
+			font-size : 1em;
+			width : 50%;
+			border-left : 1px dotted;
+			padding-right : 0;
+			text-align : right;
+		}
+	
+	nav #scroll-down {
+		font-size : .67em;
+		margin-top : 1.75em;
+		text-align : right;
+	}
+
+article {
+	clear : both;
+	padding : 2em;
+	background-color : white;
+	background-color : rgba(255,255,255,.9);
+}
+
+	h1, h2, h3 {
+		margin : 0;
+		padding : 1em 0 .5em 0;
+		text-align : center;
+		clear : left;
+	}
+
+		h1 {
+			padding-top : .5em;
+			font-size : 2.2em;
+		}
+
+		h2 {
+			font-size : 1.8em;
+		}
+		h3 {
+			font-size : 1.5em;
+		}
+
+	p {
+		margin : .5em 0 .5em 0;
+		text-indent : 1em;
+		text-align : justify;
+	}
+
+	ol, ul {
+		margin : .5em 0 .75em 0;
+		padding : 0;
+	}
+
+		li {
+			margin : 1em 0 1em 2em;
+			padding-left : .5em;
+		}
+	
+		ol li {
+		/*	list-style : georgian; */
+		}
+
+		ul li {
+			list-style : circle;
+		}	
+	
+	address, blockquote, aside {
+		display : inline-block;
+		margin : 1em 2em 2em 2em;
+	}
+
+		blockquote p:last-child {
+			text-align : right;
+		}
+	
+		aside {
+			font-size : .9em;
+			margin-top : 5em;
+			color : rgb( 80, 80, 80 );
+		}
+	
+footer {
+	clear : both;
+	text-align : center;
+	margin-top : 8em;
+}
+
+	footer p {
+		margin : 8em 0 0 0;
+		padding : 2em;
+		background-color : white;
+		background-color : rgba( 255, 255, 255, .85 );
+		text-align : center;
+	}
+
+.clear {
+	clear : both;
+}
+
+@media all and ( min-width : 1600px ) {
+
+}
+
+@media all and ( max-width : 1080px ) {
+
+}
+	
+@media all and ( max-width : 860px ){
+
+}
+
+#recent-articles {
+	position : absolute;
+	font-size : 1.25em;
+	top : 10px;
+	left : 10px;
+	margin : 0;
+}
+

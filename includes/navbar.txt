@@ -1,0 +1,6 @@
+ - [Home](./index.htm)
+ - [News](./news.htm)
+ - [Team](./team.htm)
+ - [The Project](./project.htm)
+ - [FAQ](./faq.htm)
+ - [Contact](./contact.htm)
